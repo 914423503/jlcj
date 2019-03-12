@@ -1,0 +1,19 @@
+server:
+  port: 8112
+spring:
+  application:
+    name: device-gather
+  rabbitmq:
+    host: 192.168.1.79
+    port: 5672
+    username: cnten
+    password: cnten
+vertx: 
+  worker:
+    pool:
+      size: 60
+  springWorker:
+    instances: 30
+  http:
+    port: 20001
+    address: 0.0.0.0
